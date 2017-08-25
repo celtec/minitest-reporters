@@ -54,6 +54,7 @@ module MiniTest
           print(red(pad_mark('FAIL')))
           puts
           print_info(test_runner.exception, false)
+          raise Interrupt
         else
           test_result(red('F'))
         end
